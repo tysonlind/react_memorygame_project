@@ -1,1 +1,65 @@
 /* Add custom styling here */
+body {
+    background-color: lightblue;
+}
+
+.App-header {
+    background-color: rgb(33, 51, 105);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.align-itmes-center {
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+img {
+    height: 200px;
+}
+button {
+    border-radius: 10%;
+    background-color: #E6E6FA;
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    border: 2px solid black;
+    height: 50px;
+    width: 75px;
+}
+
+.display {
+    display:block;
+}
+
+.no-display {
+    display:none;
+}
+@keyframes flashing-text{
+    25% {
+        color: black;
+    } 50% {
+        color:red;
+    } 75% {
+        color:yellow;
+    } 100% {
+        color:blue;
+    }
+}
+
+#high-score-text p {
+    animation-name: flashing-text;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
